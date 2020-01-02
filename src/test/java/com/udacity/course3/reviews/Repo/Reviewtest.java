@@ -42,6 +42,6 @@ entityManager.flush();
 
 assertThat(product.getProductId()).isNotNull();
 
-        assertThat(review.getReview()).isNotNull();
+
     }
 }

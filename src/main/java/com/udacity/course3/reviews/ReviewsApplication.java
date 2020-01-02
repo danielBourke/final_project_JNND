@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
 @SpringBootApplication
-
+@EnableMongoRepositories
 public class ReviewsApplication {
 
 	public static void main(String[] args) {
