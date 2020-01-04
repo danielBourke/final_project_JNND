@@ -7,7 +7,7 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import java.util.List;
 
 public interface ReviewRepositoraryMongo extends MongoRepository<Reviewmongo, String> {
-    List<Review> findAllByProductId(int productId);
+    List<Review> findReviewByProduct(int productId);
 }
 
 

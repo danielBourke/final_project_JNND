@@ -13,8 +13,8 @@ import java.util.Optional;
 @Repository
 
 public interface ReviewRepository extends JpaRepository<Review, Integer> {
-    public List<Review> findReviewByProductId(Integer productId);
-    @Query("Select r.id from Review r join r.product p where p.id = ?1")
+    public List<Review> findReviewByProduct(Integer productId);
+    @Query("Select r.reviewId from Review r join r.product p where p.productId = ?1")
     List<Review> findAllByProductId(Integer productId);
 
 
